@@ -53,7 +53,7 @@ public class ShoppingCart {
 	//출판물 타입에 따른 할인 가격 계산
 	public int calculateDiscountedPrice() {
 		int discountedPrice = 0;
-
+ 
 		for (Publication item : items) {
 			if(item instanceof Magazine) {
 				discountedPrice += item.getPrice() * 0.9;
